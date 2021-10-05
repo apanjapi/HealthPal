@@ -13,6 +13,20 @@
 .inputbox{
   
 }
+
+.container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.LeftText {
+  align-items: left;
+  justify-content: left;
+  margin-left:-230px;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

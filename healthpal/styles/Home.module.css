@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@1&display=swap'); 
+/* logo font */
+
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -10,6 +14,7 @@
   background-color:#2C2C2C;
 }
 
+
 .inputbox{
   
 }
@@ -19,3 +24,4 @@
     flex-direction: column;
   }
 }
+

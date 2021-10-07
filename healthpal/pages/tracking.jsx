@@ -12,7 +12,6 @@ export default function Home() {
       <Label value="Today +" placeholder="Weight(KG)"/>
       
       <Navbar />
-      <div>Bottom nav</div>
     </div>
   );
 }

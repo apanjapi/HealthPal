@@ -25,7 +25,6 @@ export default function Home() {
         <Response placeholder="Weight to lose" value="Kg" />
       </div>
       <Navbar />
-      <div>Bottom nav</div>
     </div>
   );
 }

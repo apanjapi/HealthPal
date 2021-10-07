@@ -26,7 +26,6 @@ export default function Home() {
             <CaloriesInput title="Liquid +"></CaloriesInput>
         </div>
         <Navbar />
-        <div>Bottom nav</div>
     </div>
   
   )

@@ -20,7 +20,6 @@ export default function Home() {
         </div>
       </div>
       <Navbar></Navbar>
-      <div>Bottom nav</div>
     </div>
   );
 }

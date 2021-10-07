@@ -1,64 +1,67 @@
 import styled from 'styled-components';
 import React from 'react';
-import Image from 'next/image';
-
+import { CgProfile } from 'react-icons/cg';
 
 const Container = styled.div`
-display:flex;
-flex-direction:row;
-flex-grow:1;
-width:350px;
-height:80px;
-justify-content:center;
-background-color:#2C2C2C;
-margin:40%;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 60px;
+  background-color: #2C2CAA;
+  border: 1px solid white;
 `
-const Info = styled.div`
-display:flex;
-width:80px;
-height:70px;
-margin:5px;
-align-items:center;
-justify-content:center;
+
+const Cont1 = styled.div`
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;  
+  background-color: grey;
 `
-const Record = styled.div`
-display:flex;
-width:80px;
-height:70px;
-align-items:center;
-justify-content:center;
-margin:10px;
+
+const Cont2 = styled.div`
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: #fgd;
 `
-const Track = styled.div`
-display:flex;
-width:80px;
-height:70px;
-margin:5px;
-justify-content:center;
-align-items:center;
+
+const Cont3 = styled.div`
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: #agd;
 `
-const Profile = styled.div`
-display:flex;
-width:80px;
-height:70px;
-margin:10px;
-justify-content:center;
-align-items:center;
+
+const Cont4 = styled.div`
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: #agg;
 `
+
 const Navbar = ({})=>{
-  return<Container>
-  <Info>
-  <Image src={"/Info.png"} width={55} height={55} />
-  </Info>
-  <Record>
-  <Image src={"/Record.png"} width={50} height={50}/>
-  </Record>
-  <Track>
-  <Image src={"/Tracking.png"} width={60} height={60}/>
-  </Track>
-  <Profile>
-  <Image src={"/Profile.png"} width={50} height={50}/>
-  </Profile>
+  return <Container>
+    <Cont1>
+      <p>1111</p>
+      <p>1111</p>
+    </Cont1>
+    <Cont2>
+      <p>2222</p>
+      <CgProfile />
+    </Cont2>
+    <Cont3>
+      <p>3333</p>
+    </Cont3>
+    <Cont4>
+      <p>4444</p>
+      <p>4444</p>
+    </Cont4>
   </Container>
 }
 

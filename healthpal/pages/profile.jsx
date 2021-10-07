@@ -3,6 +3,7 @@ import TopBar from "../comp/Topbar";
 import Response from "../comp/Text/text";
 import Image from 'next/image';
 import styled from "styled-components";
+import Navbar from "../comp/Navbar";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <Response placeholder="Weight Goal" value="Kg" />
         <Response placeholder="Weight to lose" value="Kg" />
       </div>
+      <Navbar />
       <div>Bottom nav</div>
     </div>
   );

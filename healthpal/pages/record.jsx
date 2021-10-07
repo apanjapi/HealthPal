@@ -1,6 +1,7 @@
 import styles from '../styles/Home.module.css'
 import CaloriesInput from '../comp/CaloriesInput'
 import TopBar from "../comp/Topbar";
+import Navbar from "../comp/Navbar";
 //import Label from "../comp/Label";
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
             <CaloriesInput></CaloriesInput>
             <CaloriesInput title="Liquid +"></CaloriesInput>
         </div>
+        <Navbar />
         <div>Bottom nav</div>
     </div>
   

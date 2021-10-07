@@ -2,20 +2,18 @@ import styled from 'styled-components';
 import React from 'react';
 
 
-const Text = styled.h1`
-margin-left:15px;
-
+const Text = styled.div`
 `
 
 const Button = styled.button`
-align-items: center;
+display: flex;
 justify-content: center;
-width: 150px;
-height: 70px;
+align-items: center;
+width: 100px;
+height: 30px;
 border-radius:10px;
 cursor: pointer;
-margin: 20px;
-
+margin: 0 20px;
 `
 
 

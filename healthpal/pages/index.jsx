@@ -1,11 +1,9 @@
 import styles from "../styles/Home.module.css";
 import Label from "../comp/Label";
-import Topbar from "../comp/Topbar";
 
 export default function Home() {
   return (
-      <div className={styles.container}>
-         <Topbar></Topbar>
+    <div className={styles.container}>
       <h3>Tell us about yourself</h3>
       <div className={styles.inputbox}>
         <Label value="Name" placeholder="Your Name" />

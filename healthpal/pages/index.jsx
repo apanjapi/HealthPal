@@ -23,7 +23,7 @@ export default function Home() {
       </div>
       
       <Navbar />
-      <p>Raha has big heart.</p>
+      <p>Raha has big heart</p>
     
 =======
       <TopBar />

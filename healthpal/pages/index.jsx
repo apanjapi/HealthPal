@@ -4,7 +4,7 @@ import Label from "../comp/Label";
 export default function Home() {
   return (
     <div className={styles.container}>
-      <h3>Tell us about yourself</h3>
+      <h3>Tell us about yourself.</h3>
       <div className={styles.inputbox}>
         <Label value="Name" placeholder="Your Name" />
         <Label value="Gender" placeholder="Your Gender" />

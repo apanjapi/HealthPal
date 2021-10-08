@@ -18,13 +18,13 @@ margin: 0 20px;
 
 
 const CaloriesInput = ({
-  title="Food +"
- 
-})=>{
-  return<Button>
+  title = "Food +"
+
+}) => {
+  return <Button>
     <Text>{title}</Text>
-    </Button>
-  
+  </Button>
+
 }
 
 export default CaloriesInput;

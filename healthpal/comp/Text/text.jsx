@@ -15,8 +15,8 @@ const Space = styled.div`
 margin 10px;
 `
 
-const Response = ({ placeholder = "Title text", value = "text"}) => {
-    return(
+const Response = ({ placeholder = "Title text", value = "text" }) => {
+    return (
         <Box>
             <Title>{placeholder}</Title>
             <Space> : </Space>

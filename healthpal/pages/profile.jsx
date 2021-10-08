@@ -1,9 +1,8 @@
 import styles from "../styles/Home.module.css";
-import TopBar from "../comp/Topbar";
+import TopBar from "../comp/Topbar/topbar";
 import Response from "../comp/Text/text";
 import Image from 'next/image';
-import styled from "styled-components";
-import Navbar from "../comp/Navbar";
+import Navbar from "../comp/Navbar/navbar";
 
 export default function Home() {
   return (
@@ -11,9 +10,9 @@ export default function Home() {
       <TopBar />
       <div className={styles.container4}>
         <Image src="/user.png"
-        alt="user icon"
-        width={80}
-        height={80}
+          alt="user icon"
+          width={80}
+          height={80}
         />
         <div className={styles.name}>Name</div>
         <Response placeholder="Gender" value="Male" />

@@ -1,7 +1,7 @@
 import styles from "../styles/Home.module.css";
-import Label from "../comp/Label";
-import TopBar from "../comp/Topbar";
-import Navbar from "../comp/Navbar";
+import Label from "../comp/Label/label";
+import TopBar from "../comp/Topbar/topbar";
+import Navbar from "../comp/Navbar/navbar";
 
 export default function Home() {
   return (
@@ -9,8 +9,8 @@ export default function Home() {
       <TopBar />
       <h3 className={styles.heading}>Weight History</h3>
       <div>add graph api here</div>
-      <Label value="Today +" placeholder="Weight(KG)"/>
-      
+      <Label value="Today +" placeholder="Weight(KG)" />
+
       <Navbar />
     </div>
   );

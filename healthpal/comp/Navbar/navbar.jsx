@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import React, { useState } from 'react';
-import router, {useRouter} from 'next/router';
+import router, { useRouter } from 'next/router';
 
 const Container = styled.div`
   display:flex;
@@ -17,7 +17,7 @@ const Cont1 = styled.div`
   justify-content: center;
   align-items: center;
   border: 1px solid white;  
-  background-color: ${props=>props.bgcolor};
+  background-color: ${props => props.bgcolor};
 `
 
 const Cont2 = styled.div`
@@ -27,7 +27,7 @@ const Cont2 = styled.div`
   justify-content: center;
   align-items: center;
   border: 1px solid white;
-  background-color: ${props=>props.bgcolor};
+  background-color: ${props => props.bgcolor};
 `
 
 const Cont3 = styled.div`
@@ -36,7 +36,7 @@ const Cont3 = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${props=>props.bgcolor};
+  background-color: ${props => props.bgcolor};
 `
 
 const Cont4 = styled.div`
@@ -46,7 +46,7 @@ const Cont4 = styled.div`
   justify-content: center;
   align-items: center;
   border: 1px solid white;
-  background-color: ${props=>props.bgcolor};
+  background-color: ${props => props.bgcolor};
 `
 
 const imgBox = styled.img`
@@ -55,52 +55,52 @@ const imgBox = styled.img`
 `
 
 const Navbar = ({
-  bgcolor="#fad",
-})=>{
+  bgcolor = "#fad",
+}) => {
 
   const [countit1, setCountit1] = useState(0);
-  if (countit1 === 1){
-    bgcolor="#328046"
+  if (countit1 === 1) {
+    bgcolor = "#328046"
   }
-  else if (countit1 === 0){
-    bgcolor="#fad"
+  else if (countit1 === 0) {
+    bgcolor = "#fad"
   }
-  else if (countit1 > 1){
+  else if (countit1 > 1) {
     console.log("condition met")
     setCountit1(0)
-    bgcolor="#fad"
+    bgcolor = "#fad"
   }
 
   const [countit2, setCountit2] = useState(0);
-  if (countit2 === 0){
-    bgcolor="#fad"
+  if (countit2 === 0) {
+    bgcolor = "#fad"
   }
-  else if (countit2 === 1){
-    bgcolor="#328046"
+  else if (countit2 === 1) {
+    bgcolor = "#328046"
   }
-  else if (countit2 > 1){
+  else if (countit2 > 1) {
     setCountit2(0)
-    bgcolor="#fad"
+    bgcolor = "#fad"
   }
 
   return <Container>
     <Cont1 onClick={() => {
-        router.push("/");
-        console.log(countit1);
-        setCountit1(countit1 + 1);
+      router.push("/");
+      console.log(countit1);
+      setCountit1(countit1 + 1);
     }}>
       <img src="https://placekitten.com/30/30" />
       <p>Info.</p>
     </Cont1>
-    <Cont2 onClick={()=>router.push("/record")}>
+    <Cont2 onClick={() => router.push("/record")}>
       <img src="https://placekitten.com/30/30" />
       <p>Record</p>
     </Cont2>
-    <Cont3 onClick={()=>router.push("/tracking")}>
+    <Cont3 onClick={() => router.push("/tracking")}>
       <img src="https://placekitten.com/30/30" />
       <p>Tracking</p>
     </Cont3>
-    <Cont4 onClick={()=>router.push("/profile")}>
+    <Cont4 onClick={() => router.push("/profile")}>
       <img src="https://placekitten.com/30/30" />
       <p>Profile</p>
     </Cont4>

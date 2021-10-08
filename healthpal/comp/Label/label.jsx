@@ -28,7 +28,11 @@ const Input = styled.input`
   width: 100px;
   height: 30px;
 `;
-const Label = ({ placeholder = "Your full name", value = "Name" }) => {
+const Label = ({ 
+  placeholder = "Your full name",
+  value = "Name",
+  visibility = "flex"
+  }) => {
   return (
     <CtrlCont>
       <Key>{value}</Key>

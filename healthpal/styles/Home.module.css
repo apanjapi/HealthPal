@@ -3,7 +3,7 @@
 
 
 .container {
-  min-height: 100vh;
+  height: max-content;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;

@@ -18,10 +18,10 @@ margin: 0 20px;
 
 
 const CaloriesInput = ({
-  title = "Food +"
-
+  title = "Food +",
+  clickHandler = () => { }
 }) => {
-  return <Button>
+  return <Button onClick={clickHandler}>
     <Text>{title}</Text>
   </Button>
 

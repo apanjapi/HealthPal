@@ -4,9 +4,7 @@ import CaloriesInput from '../comp/CaloriesInput/input';
 import TopBar from '../comp/Topbar/topbar';
 import Navbar from '../comp/Navbar/navbar';
 import Label from '../comp/Label/label';
-import { useState } from 'react';
 import Calculate from '../comp/Calculate/calculate';
-import Label from '../comp/Label/label';
 
 
 export default function Home() {
@@ -81,15 +79,6 @@ export default function Home() {
       <Calculate />
       <h3 className={styles.heading}>Breakfast</h3>
       <div className={styles.container3}>
-<<<<<<< HEAD
-        <CaloriesInput onClick={()=>{
-          setAppendEl(true);
-          console.log(appendEl);
-        }}></CaloriesInput>
-        <CaloriesInput title="Liquid +" onClick={()=>{
-          console.log("I'm working");
-        }}></CaloriesInput>
-=======
         <CaloriesInput clickHandler={createFoodBreakfast}></CaloriesInput>
         <CaloriesInput title="Liquid +" clickHandler={createwaterBreakfast}></CaloriesInput>
       </div>
@@ -98,7 +87,6 @@ export default function Home() {
       </div>
       <div>
         {waterBreakfast.map(waterBreakfast => <Label key={waterBreakfast.title} value={waterBreakfast.title} placeholder={waterBreakfast.placeHolder} />)}
->>>>>>> origin/Amelie
       </div>
 
       <h3 className={styles.heading}>Lunch</h3>

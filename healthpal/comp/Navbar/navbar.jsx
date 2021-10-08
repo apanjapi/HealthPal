@@ -1,13 +1,15 @@
 import styled from 'styled-components';
 import React, { useState } from 'react';
 import router, { useRouter } from 'next/router';
+import Image from 'next/image';
 
 const Container = styled.div`
   display:flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  width: 100vw;
-  border: 1px solid white;
+  flex-wrap: nowrap;
+  min-width: 30vw;
+  border-top: 1px solid white;
+  padding-top: 2vh;
 `
 
 const Cont1 = styled.div`
@@ -16,7 +18,6 @@ const Cont1 = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid white;  
   background-color: ${props => props.bgcolor};
 `
 
@@ -26,7 +27,6 @@ const Cont2 = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid white;
   background-color: ${props => props.bgcolor};
 `
 
@@ -45,7 +45,6 @@ const Cont4 = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid white;
   background-color: ${props => props.bgcolor};
 `
 
@@ -89,19 +88,35 @@ const Navbar = ({
       console.log(countit1);
       setCountit1(countit1 + 1);
     }}>
-      <img src="https://placekitten.com/30/30" />
-      <p>Info.</p>
+      <Image src="/info.png" 
+      alt="info icon"
+      width={30}
+      height={30}
+      />
+      <p>Info</p>
     </Cont1>
     <Cont2 onClick={() => router.push("/record")}>
-      <img src="https://placekitten.com/30/30" />
+    <Image src="/edit.png" 
+      alt="edit icon"
+      width={30}
+      height={30}
+      />
       <p>Record</p>
     </Cont2>
     <Cont3 onClick={() => router.push("/tracking")}>
-      <img src="https://placekitten.com/30/30" />
+    <Image src="/bar.png" 
+      alt="bar icon"
+      width={30}
+      height={30}
+      />
       <p>Tracking</p>
     </Cont3>
     <Cont4 onClick={() => router.push("/profile")}>
-      <img src="https://placekitten.com/30/30" />
+    <Image src="/icon.png" 
+      alt="user icon"
+      width={30}
+      height={30}
+      />
       <p>Profile</p>
     </Cont4>
   </Container>

@@ -2,6 +2,7 @@ import styles from "../styles/Home.module.css";
 import Label from "../comp/Label/label";
 import TopBar from "../comp/Topbar/topbar";
 import Navbar from "../comp/Navbar/navbar";
+import CaloriesInput from "../comp/CaloriesInput/input";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
           <Label value="Weight Goal" placeholder="Weight(KG)" />
         </div>
       </div>
+      <CaloriesInput title="Submit"/>
       <Navbar></Navbar>
     </div>
   );
